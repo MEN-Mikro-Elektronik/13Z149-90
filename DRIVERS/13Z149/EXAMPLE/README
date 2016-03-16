@@ -1,0 +1,11 @@
+dpram_ctrl shows the interfaces provided by the DPRAM men_lx_z149 driver.
+When men_lx_z149 is loaded, the /dev/dpram device node is created.
+
+The following file operations are available:
+	- open, close and mmap
+	- ioctl to get the DPRAM physical address and size
+	- ioctl to send an interrupt to the NIOS
+	- ioctl to read the interrupt from the NIOS
+	- ioctl to reset the interrupt from the NIOS
+
+This driver does not support mutli-threaded accesses.
